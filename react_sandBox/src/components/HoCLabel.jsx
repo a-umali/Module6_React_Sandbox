@@ -6,7 +6,7 @@ export const HoCLabel = ({label, children}) => {
     // RETURN
   return (
     <div>
-        <p>{label}</p>
+        {label}
         {children}
     </div>
     );
