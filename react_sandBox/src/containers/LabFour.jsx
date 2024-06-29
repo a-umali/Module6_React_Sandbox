@@ -1,10 +1,27 @@
+import { BigCats, SingleCat } from "../components/BigCats"
 
 
 export const LabFour= () => {
 
+//    SORT
+
+const catSorter = () => {[...BigCats].sort()
+
+}
+
+//    FILTER
+
+const catFilter = () => {[...BigCats].filter()
+
+}
+
+    
     return (
-
-        <><h1>Lab Four</h1></>
-
+        <>
+        <div>
+        <BigCats />
+        <SingleCat />
+        </div>
+        </>
     );
 };
