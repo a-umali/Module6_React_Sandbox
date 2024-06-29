@@ -4,6 +4,7 @@ import { Greetings, GreetingsHoC } from "./components/Greetings";
 import { LabTwo } from './containers/LabTwo';
 import { LabOne } from './containers/LabOne';
 import { LabThree } from './containers/LabThree';
+import { LabFour } from './containers/LabFour';
 
 // COMPONENT FUNCTION NAME -> INITIALISE
 
@@ -17,7 +18,7 @@ import { LabThree } from './containers/LabThree';
       labTwo: "Lab 2",
     };
 
-const contentConfig = [{ lab: " Lab 1"},{ lab: " Lab 2"},{ lab: " Lab 3"},];
+const contentConfig = [{ lab: " Lab 1"},{ lab: " Lab 2"},{ lab: " Lab 3"},{ lab: " Lab 4"},];
 
 
 // FUNCTIONS
@@ -29,6 +30,8 @@ const contentConfig = [{ lab: " Lab 1"},{ lab: " Lab 2"},{ lab: " Lab 3"},];
           return <LabTwo />;
         case contentConfig[2].lab:
           return <LabThree />;
+        case contentConfig[2].lab:
+          return <LabFour />;
         default:
           return <div> Click on a Lab button to see the content</div>;
       }
