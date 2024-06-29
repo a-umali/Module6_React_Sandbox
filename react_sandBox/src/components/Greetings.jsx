@@ -20,7 +20,7 @@ export const Greetings = ({name}) => {
     );
 };
 
-export const GreetingsHoC = ({ name, children }) => {
+export const GreetingsHoC = ({ name , children}) => {
 
     // STATE AND VAR
 
