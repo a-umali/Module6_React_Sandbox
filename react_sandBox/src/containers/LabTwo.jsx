@@ -1,4 +1,5 @@
 import { BigCats } from "../components/BigCats";
+import { Calculator } from "../components/Calculator";
 import { GreetingsHoC } from "../components/Greetings"
 
 
@@ -6,9 +7,9 @@ import { GreetingsHoC } from "../components/Greetings"
 
     return (
         <>
-        <div>
-        <GreetingsHoC name={"Alvin"}><p>content for lab 2</p>
-        </GreetingsHoC>
+        <div style={{margin: "5px", textAlign: "center"}}>
+        Calculator
+        <Calculator></Calculator>
         </div>
         </>
     );
