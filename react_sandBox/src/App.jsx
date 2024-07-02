@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import { Greetings, GreetingsHoC } from "./components/Greetings";
-import { LabTwo } from './containers/LabTwo';
 import { LabOne } from './containers/LabOne';
+import { LabTwo } from './containers/LabTwo';
 import { LabThree } from './containers/LabThree';
 import { LabFour } from './containers/LabFour';
+import { LabFive } from './containers/LabFive';
 
 // COMPONENT FUNCTION NAME -> INITIALISE
 
@@ -18,7 +18,7 @@ import { LabFour } from './containers/LabFour';
       labTwo: "Lab 2",
     };
 
-const contentConfig = [{ lab: " Lab 1"},{ lab: " Lab 2"},{ lab: " Lab 3"},{ lab: " Lab 4"},];
+const contentConfig = [{ lab: " Lab 1"},{ lab: " Lab 2"},{ lab: " Lab 3"},{ lab: " Lab 4"},{ lab: " Lab 5"}];
 
 
 // FUNCTIONS
@@ -30,8 +30,10 @@ const contentConfig = [{ lab: " Lab 1"},{ lab: " Lab 2"},{ lab: " Lab 3"},{ lab:
           return <LabTwo />;
         case contentConfig[2].lab:
           return <LabThree />;
-        case contentConfig[2].lab:
+        case contentConfig[3].lab:
           return <LabFour />;
+        case contentConfig[4].lab:
+          return <LabFive />;
         default:
           return <div> Click on a Lab button to see the content</div>;
       }

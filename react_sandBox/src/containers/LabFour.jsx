@@ -1,26 +1,14 @@
-import { BigCats, SingleCat } from "../components/BigCats"
+import { BigCats} from "../components/BigCats"
+import { SingleCat } from "../components/SingleCat";
 
 
 export const LabFour= () => {
 
-//    SORT
-
-const catSorter = () => {[...BigCats].sort()
-
-}
-
-//    FILTER
-
-const catFilter = () => {[...BigCats].filter()
-
-}
-
-    
     return (
         <>
         <div>
+        Lab 4
         <BigCats />
-        <SingleCat />
         </div>
         </>
     );

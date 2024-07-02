@@ -12,7 +12,7 @@ import { Greetings, GreetingsHoC } from "../components/Greetings"
     return (
         <div style={{margin: "5px"}}>
             <LabelAndContent labelText={"Lab 1a & b"}>
-                <Greetings name={Alvin} />
+                <Greetings name={"Alvin"} />
             </LabelAndContent>
 
             <LabelAndContent labelText={"Lab 1c"}>

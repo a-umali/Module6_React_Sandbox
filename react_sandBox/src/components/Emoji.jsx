@@ -1,48 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export const Emoji = () => {
-
-const [mood, setMood] = useState("happy");
-const happy = '(づ｡◕‿‿◕｡)づ';
-const sad = '( ಠ ͜ʖ ರೃ)';
-
-const changeMood = () => {
-    console.log("I'm feeling", mood);
-        if (mood === "happy") {
-            setMood("sad");
-            return;
-        }
-
-        setMood(happy);
+export const MoodToggler = () => {
+  const [mood, setMood] = useState("happy");
+  const happyEmoji = '(づ｡◕‿‿◕｡)づ';
+  const sadEmoji = '( ಠ ͜ʖ ರೃ)';
+  
+  const toggleMood = () => {
+    setMood(prevMood => prevMood === "happy" ? "sad" : "happy");
+  };
+  
+  return (
+    <div>
+      <h1>Current Mood:</h1>
+      <h1>{mood === "happy" ? happyEmoji : sadEmoji}</h1>
+      <button onClick={toggleMood}>Toggle Mood</button>
+    </div>
+  );
 };
-
-const displayHandler = () => {
-    if (mood === happy) {
-        return happy;
-    }
-
-    if (mood === sad) {
-        return sad;
-    }
-};
-
-return (
-<>
-        <div>
-        {displayHandler()}
-        <button onClick={changeMood}>Change Mood</button>
-        </div>
-</>
-);
-};
-
-
-
-
-//     const emojis = ['(づ｡◕‿‿◕｡)づ', '( ಠ ͜ʖ ರೃ)', 'ಠ_ಠ', '≧◡≦', '(◔_◔)'];
-//     const randomEmoji = Math.floor(Math.random() * emojis.length);
-//     setEmoji(randomEmoji);
-    
-//     return <div>{emojis[randomEmoji]}
-//     <button onClick={randomEmoji}> Change Mood </button></div>;
-// };
