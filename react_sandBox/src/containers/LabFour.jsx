@@ -6,7 +6,7 @@ export const LabFour= () => {
 
     return (
         <>
-        <div>
+        <div style={{ width: "60%", marginLeft: "auto", marginRight: "auto" }}>
         Lab 4
         <BigCats />
         </div>

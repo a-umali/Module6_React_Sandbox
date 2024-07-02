@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SingleCat } from './SingleCat';
 
 const BigCats = () => {
+
   const cats = [
     { id: 7, name: 'Tiger', latinName: 'Panthera tigris' },
     { id: 2, name: 'Cougar', latinName: 'Puma concolor' },
@@ -13,6 +14,13 @@ const BigCats = () => {
   ];
 
   const [currentCats, setCurrentCats] = useState(cats);
+
+  useEffect(() => {
+    if (DataTransfer.length !== catsData.length) {
+      setCatsData(data);
+    }
+  }, [data]);
+  
 
   const catSorter = (type) => {
     let sortedCats = [...currentCats];

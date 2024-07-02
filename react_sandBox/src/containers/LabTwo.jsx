@@ -7,7 +7,7 @@ import { GreetingsHoC } from "../components/Greetings"
 
     return (
         <>
-        <div style={{margin: "5px", textAlign: "center"}}>
+        <div style={{ width: "60%", marginLeft: "auto", marginRight: "auto" }}>
         Calculator
         <Calculator></Calculator>
         </div>
